@@ -162,3 +162,7 @@ cython_debug/
 #.idea/
 # vs code
 .vs code
+
+.vscode/
+*.jpg
+*.zip
