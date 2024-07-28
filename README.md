@@ -1,3 +1,15 @@
-#deep classifier project
-#this is deep classifer project
-#this is main branch
+# deep classifier project
+
+------------
+# Worklow
+1. Update config.yaml
+2. Update secrets.yaml [Optional]
+3. Update params.yaml
+4. Update the entity
+5. Update the configuration manager in src config
+6. Update the components
+7. Update the pipelines
+8. Test run pipeline stage
+9. run tox for testing your package
+10. update the dvc.yaml
+11. run "dvc repro" or running all the stages in pipeline
