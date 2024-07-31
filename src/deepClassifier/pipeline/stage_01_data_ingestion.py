@@ -4,6 +4,7 @@ from deepClassifier import logger
 
 STAGE_NAME = "Data Ingestion stage"
 
+
 def main():
     config = ConfigurationManager()
     data_ingestion_config = config.get_data_ingestion_config()
@@ -12,11 +13,13 @@ def main():
     data_ingestion.unzip_and_clean()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     try:
         logger.info(f"\n\n>>>>> stage {STAGE_NAME} started >>>>>>>>>>")
         main()
-        logger.info(f">>>>>>>>> stage {STAGE_NAME} completed >>>>>>>>>>>\n\n=====================x")
+        logger.info(
+            f">>>>>>>>> stage {STAGE_NAME} completed >>>>>>>>>>>\n\n=====================x"
+        )
     except Exception as e:
         logger.exception(e)
         raise e
